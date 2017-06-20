@@ -1,0 +1,160 @@
+@font-face {
+    font-family: PT_Sans;
+    src: url(../fonts/PT_Sans-Narrow-Web-Regular.ttf);
+}
+
+body {
+  margin: 0px;
+  overflow: hidden;
+  font-family: PT_Sans;
+}
+
+header {
+  position: fixed;
+  z-index: 5;
+  height: 5vh;
+  width: 100vw;
+}
+
+.presentation {
+
+}
+
+.presentation div {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 1000ms ease;
+}
+
+.presentation button {
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+}
+.presentation button:disabled{
+  filter: opacity(0.5);
+}
+.presentation button:focus{
+  outline: 0;
+}
+
+.presentation div div{
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  transition: all 1000ms ease;
+}
+
+.presentation div section{
+  width: 100vw;
+  height: 95vh;
+  padding-top: 5vh;
+}
+
+.up{
+  background-image: url('../img/arrow-up-black.png');
+  bottom: 128px;
+  right: 64px;
+}
+
+.left{
+  background-image: url('../img/arrow-left-black.png');
+  bottom: 64px;
+  right: 128px;
+}
+
+.down{
+  background-image: url('../img/arrow-down-black.png');
+  bottom: 0px;
+  right: 64px;
+}
+
+.right{
+  background-image: url('../img/arrow-right-black.png');
+  bottom: 64px;
+  right: 0px;
+}
+
+.signinButton {
+  filter: opacity(0.5);
+  top: 0px;
+  right: 0px;
+  background-image: url('../img/finger-print.png');
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  z-index: 5;
+}
+.signinButton:hover{ filter: opacity(1); }
+.signinButton:focus{ outline: 0; }
+
+.signoutButton {
+  filter: opacity(0.5);
+  top: 0px;
+  right: 0px;
+  background-image: url('../img/sign-out.png');
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  z-index: 5;
+}
+.signoutButton:hover{ filter: opacity(1); }
+.signoutButton:focus{ outline: 0; }
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+.signin-modal-body {
+  z-index: 15;
+  width: 60vw;
+  height: 60vh;
+  margin: 20vh 20vw;
+  background-color: rgb(255, 255, 255);
+}
+
+.createOrder {
+  margin: 2% 5%;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 94%;
+}
+
+.createOrder div{
+  display: flex;
+  flex-direction: row;
+  margin-top: 1%;
+}
+
+.createOrder div div{
+  height: 6vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.createOrder div button {
+  background-size: auto;
+  background-color: white;
+  width: auto;
+  height: auto;
+}
+
+.order{
+  background: url('../img/orders_bg.jpg');
+  padding-top: 5vh;
+  height: 95vh;
+}

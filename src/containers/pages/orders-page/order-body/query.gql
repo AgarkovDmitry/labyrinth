@@ -1,0 +1,14 @@
+query order ($id: ID!){
+  order(id: $id) {
+    description,
+    result,
+    name,
+    surname,
+    phone,
+    email,
+    seen {
+      name,
+      surname
+    }
+  }
+}

@@ -1,0 +1,9 @@
+mutation ($id: ID!){
+  seeOrder(id: $id) {
+    seen {
+      id,
+      name,
+      surname
+    }
+  }
+}
